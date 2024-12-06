@@ -1,0 +1,183 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000000, #333333);
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(90deg, #000000, #333333);
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #FFD700; /* Dourado Botafogo */
+    text-shadow: 0 0 5px #FFD700;
+}
+
+/* Botão Voltar */
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.back-button button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #FFD700;
+    color: #000000;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.back-button button:hover {
+    background-color: #ffffff;
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
+/* Título Principal */
+div h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #FFD700;
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #ffffff;
+}
+
+/* Parágrafos */
+div p {
+    margin: 15px 0;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.8;
+    color: #dddddd;
+}
+
+/* Listas */
+div ul {
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    width: 80%;
+    list-style-type: none;
+}
+
+div ul li {
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-left: 3px solid #FFD700;
+}
+
+/* Container de Contato */
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-container h2 {
+    color: #FFD700;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #FFD700;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Ícones de Redes Sociais */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 15px;
+    font-size: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a img {
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.7);
+}
+
+/* Footer */
+footer {
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+    border-top: 2px solid #FFD700;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    header a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    div ul {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .social-icons a img {
+        width: 30px;
+    }
+
+    .back-button button {
+        width: 100%;
+        padding: 10px;
+    }
+}
